@@ -63,7 +63,6 @@ import { PatientSearchComponent } from './patient-search/patient-search.componen
 import { PatinetViewComponent } from './patinet-view/patinet-view.component';
 import { RecentVisitsComponent } from './recent-visits/recent-visits.component';
 import { CardTitleComponent } from './card-title/card-title.component';
-import { QueueMinComponent } from './queue-min/queue-min.component';
 import { QueueComponent } from './queue/queue.component';
 import { VisitsComponent } from './visits/visits.component';
 import { SetupDialogComponent } from './setup-dialog/setup-dialog.component';
@@ -93,7 +92,6 @@ import { RouteComponent } from './upload_profile_pic/route/route.component';
     PatinetViewComponent,
     RecentVisitsComponent,
     CardTitleComponent,
-    QueueMinComponent,
     QueueComponent,
     VisitsComponent,
     SetupDialogComponent,

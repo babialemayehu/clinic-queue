@@ -12,4 +12,5 @@ export interface Patient_queue{
     queue_number: number, 
     humanWaitingTime: string,
     date: string,
+    _call: number
 }

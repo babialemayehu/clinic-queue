@@ -23,21 +23,7 @@ export class AppComponent {
       M.AutoInit(); 
     });
    
-    this._user.authUser().subscribe(
-      result => {
-        this.$auth = result; 
-        this.profilePic = result.profile_pic;
-        if(result.setup_step >= 0){
-          this._dialog.open(SetupDialogComponent, {
-            width: '400px', 
-            data: {
-              step: result.setup_step, 
-              disableClose: true
-            }
-          });
-        }
-      }
-    );   
+    
   }
     
 

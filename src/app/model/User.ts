@@ -10,6 +10,7 @@ export class User {
     public email: string,
     public phone: string,
     public role?: number,
+    public room_number?: number, 
     public profile_pic?: string,
     public setup_step?: number,
     public created_at?: string,

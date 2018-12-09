@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QueueMinComponent } from './queue-min.component';
+import { FloatingActionBtnComponent } from './floating-action-btn.component';
 
-describe('QueueMinComponent', () => {
-  let component: QueueMinComponent;
-  let fixture: ComponentFixture<QueueMinComponent>;
+describe('FloatingActionBtnComponent', () => {
+  let component: FloatingActionBtnComponent;
+  let fixture: ComponentFixture<FloatingActionBtnComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QueueMinComponent ]
+      declarations: [ FloatingActionBtnComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(QueueMinComponent);
+    fixture = TestBed.createComponent(FloatingActionBtnComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

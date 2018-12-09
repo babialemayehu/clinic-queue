@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 
 import { User } from '../model/User'; 
 import { Pagination } from '../model/Pagination'; 
+import { RootURL } from '../model/RootURL';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ import { Pagination } from '../model/Pagination';
 export class UserService {
   
 
-  public root = "http://clinic"; 
+  private root = RootURL;  
   constructor(public http:HttpClient) { }
 
   postCreateUser(data): Observable<User>{

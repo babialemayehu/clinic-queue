@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 
 import { Patient } from '../model/Patient';
 import { Patient_queue } from '../model/Patient_queue'; 
+import { RootURL } from '../model/RootURL';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class PatientQueueService {
 
   constructor(public _http: HttpClient) { }
   
-  private root = "http://clinic"; 
+  private root = RootURL;  
 
   queue(patient_id: number): Observable<Patient_queue>{
     const URL = this.root+"/ajax/post/queue/add/"+patient_id; 
@@ -34,8 +35,8 @@ export class PatientQueueService {
     return this._http.get<Patient_queue[]>(URL); 
   }
 
-  queue_list(limit = -1): Observable<Patient_queue[]>{
-    const URL = this.root+"/ajax/get/queue/patients in queue/"+limit;
+  queue_list(type = 'queue'): Observable<Patient_queue[]>{
+    const URL = this.root+"/ajax/public/patients/queue/"+type;
     return this._http.get<Patient_queue[]>(URL); 
   }
 

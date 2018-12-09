@@ -6,14 +6,17 @@ import { RegisterationFormComponent } from '../registeration-form/registeration-
 import { MatDialog, throwMatDuplicatedDrawerError } from '@angular/material'; 
 import { PatientService } from '../service/patient.service'; 
 import { AlertComponent } from '../alert/alert.component'; 
-import { Router, ActivatedRoute} from '@angular/router'; 
+import { Router, ActivatedRoute} from '@angular/router';
+declare var TextToSpeech; 
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
-})
+}) 
 export class DashboardComponent implements OnInit {
 
+  
   private noSearch = true; 
   private patient: Patient; 
   private $queue: Patient_queue; 
@@ -27,6 +30,7 @@ export class DashboardComponent implements OnInit {
     private _dialog: MatDialog) { }
 
   ngOnInit() {
+    TextToSpeech.talk("hello world eba"); 
   }
 
   onSearch(patient) {
