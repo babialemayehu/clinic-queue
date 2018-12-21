@@ -13,7 +13,7 @@ export class Speek{
     }
     
     speek(messege: string){
-        this.msg.rate = 50; 
+        this.msg.rate = 0.7; 
         if(this.voices.length > 0)
             this.msg.voice = this.voices[0]; 
         this.msg.text = messege; 
